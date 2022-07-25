@@ -37,6 +37,7 @@ CREATE TABLE IF NOT EXISTS `portfolioWeb`.`persona` (
   `url_foto` VARCHAR(100) NULL,
   `acerca_de` VARCHAR(200) NULL,
   `usuario_idusuario` INT NOT NULL,
+  `url_banner` VARCHAR(100) NULL,
   PRIMARY KEY (`idpersona`, `usuario_idusuario`),
   INDEX `fk_persona_usuario1_idx` (`usuario_idusuario` ASC) VISIBLE,
   CONSTRAINT `fk_persona_usuario1`
